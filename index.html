@@ -178,6 +178,26 @@
             50% { transform: scale(1.15); opacity: 0.8; }
         }
         .marker-pulse { animation: pulse-soft 2s infinite; }
+        /* 语言能力条 */
+        .language-skill{
+            margin-top:10px;
+            font-size:12px;
+         }
+
+        .skill-bar{
+            width:100%;
+            height:6px;
+            background:#E5E7EB;
+            border-radius:4px;
+            margin:4px 0;
+            overflow:hidden;
+          }
+
+        .skill-level{
+            height:100%;
+            background:linear-gradient(90deg,#4361EE,#4CC9F0);
+            border-radius:4px;
+          }
     </style>
 </head>
 <body>
@@ -237,10 +257,30 @@
                     <div class="text-primary font-bold text-lg">多语言</div>
                     <div class="text-[10px] text-gray-400 uppercase tracking-tighter mt-1">Multilingual / Multilingüe</div>
                     <div class="accordion-content">
-                        作为中、西、英三语使用者，擅长在复杂的语境中精准传达信息。<br>
-                        Chinese-Native. <br>
-                        English-C1.<br>
-                        Spanish-C1.
+                        <p>
+                        中、西、英三语使用者<br>
+                        热爱文字，热爱故事，热爱沟通。
+                        </p>
+                        <div class="language-skill">
+                            中文
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width:100%"></div>
+                            </div>
+                        </div>
+                    
+                        <div class="language-skill">
+                            Español
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width:85%"></div>
+                            </div>
+                        </div>
+                    
+                        <div class="language-skill">
+                            English
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width:80%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- 2. 跨文化 -->
@@ -249,26 +289,31 @@
                     <div class="text-primary font-bold text-lg">跨文化</div>
                     <div class="text-[10px] text-gray-400 uppercase tracking-tighter mt-1">Intercultural / Intercultural</div>
                     <div class="accordion-content">
-                        三年拉美外派、一年欧洲留学。理解文化差异背后的逻辑，能够为国际化项目提供本土视角。
+                        三年拉美外派、一年欧洲留学<br>
+                        跨越万水千山，跨越中西文化<br>
+                        为国际化项目提供本土视角
                     </div>
                 </div>
                 <!-- 3. Content Creation -->
                 <div class="feature-box" onclick="toggleAccordion(this)">
                     <i data-lucide="pen-tool" class="mx-auto mb-4 text-primary"></i>
-                    <div class="text-primary font-bold text-lg">内容创作</div>
+                    <div class="text-primary font-bold text-lg">社媒创作</div>
                     <div class="text-[10px] text-gray-400 uppercase tracking-tighter mt-1">Content Creation</div>
                     <div class="accordion-content">
-                        爱好数字传媒，从0-1进行海外内容搭建，擅长用视觉创作和文字内容讲述品牌故事。
+                        积极探索数字传媒<br>
+                        从0-1进行海外社媒内容搭建<br>
+                        擅长用视觉和文字讲述品牌故事
                     </div>
                 </div>
-                <!-- 4. 教育教学 -->
+                <!-- 4. 国际教学 -->
                 <div class="feature-box" onclick="toggleAccordion(this)">
                     <i data-lucide="book-open" class="mx-auto mb-4 text-primary"></i>
                     <div class="text-primary font-bold text-lg">教育教学</div>
                     <div class="text-[10px] text-gray-400 uppercase tracking-tighter mt-1">Education / Educación</div>
                     <div class="accordion-content">
-                        拥有丰富的跨国教学经验，以西班牙语和英语为工作语言，主导多个针对西语母语者的汉语教学项目、文化宣传项目。<br>
-                        曾对接大使馆、当地文化团队等不同需求方。
+                        丰富的跨国教学经验，以西班牙语和英语为工作语言<br>
+                        主导多个面向西语母语者的教学项目、文化宣传项目<br>
+                        对接大使馆、当地文化团队等不同需求方
                     </div>
                 </div>
                 <!-- 5. AI Learning -->
@@ -277,7 +322,9 @@
                     <div class="text-primary font-bold text-lg">AI 学习</div>
                     <div class="text-[10px] text-gray-400 uppercase tracking-tighter mt-1">AI Learning / Aprendiendo IA</div>
                     <div class="accordion-content">
-                        积极探索 AI ，学习赋能工作流，通过技术提升创意产出效率。
+                        文科生自学搭建本网站<br>
+                        通过AI接入提升创意产出效率<br>
+                        积极探索 AI ，学习工作流赋能
                     </div>
                 </div>
             </div>
@@ -592,5 +639,6 @@
 </body>
 
 </html>
+
 
 
